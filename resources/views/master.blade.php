@@ -46,6 +46,9 @@
     .detail-img{
         height: 200px;
     }
+    .search-box{
+        width: 500px !important;
+    }
     .cart-list-devider{
         border-bottom:1px solid;
         margin-bottom: 20px;
