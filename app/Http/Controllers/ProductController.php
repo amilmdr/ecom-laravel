@@ -96,5 +96,17 @@ function myOrders(){
     return view('myorders',['orders'=>$orders]);
 
 }
-
+function addproduct(Request $req){
+    //return $req->input();
+    //instance of product
+    $product=new Product;
+    $product->name=$req->name;
+    $product->price=$req->price;
+    $product->category=$req->category;
+    $product->description=$req->description;
+    $product->gallery=$req->gallery;
+    $product->save();
+    return redirect('/');
+  }
 }
+

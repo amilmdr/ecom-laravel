@@ -35,3 +35,5 @@ Route::get('search',[ProductController::class,'search']);
 Route::get('myorders',[ProductController::class,'myOrders']);
 Route::view('/register','register');
 Route::POST('/register',[UserController::class,'register']);
+Route::view('/addproduct','addproduct');
+Route::post('/addproduct',[ProductController::class,'addproduct']);

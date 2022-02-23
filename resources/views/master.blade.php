@@ -53,6 +53,10 @@
         margin-bottom: 20px;
         padding-bottom:20px;
     }
+    .addproduct{
+        height: 500px;
+        padding-top:100px;s
+    }
 </style>
 <!-- <script>
     $(document).ready(function(){

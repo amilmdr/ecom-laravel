@@ -16,11 +16,17 @@ class UserController extends Controller
        }
        else{
            $req->session()->put('user',$user);
-         return redirect('/');  
+         return redirect('/');
        }
-    }
+      }
     function register(Request $req){
       //instance of user
+      //validation rules
+      $req->validate([
+        'name'=>'required',
+        'email'=>'required',
+        'password'=>'required'
+      ]);
       $user=new User;
       $user->name=$req->name;
       $user->email=$req->email;
